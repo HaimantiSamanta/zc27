@@ -19,7 +19,7 @@ class Wallpaper extends React.Component {
 
         axios({
             method: 'GET',
-            url: `http://localhost:4567/restaurants/${locationId}`,
+            url: `https://pure-retreat-07032.herokuapp.com/restaurants/${locationId}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
